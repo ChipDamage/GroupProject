@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="~/Content/Site.css">
+    <link rel="stylesheet" href="~/Content/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="~/Scripts/main.js"></script>
 	<script src="~/Scripts/tether.min.js"></script>
     <script src="~/Scripts/bootstrap.js"></script>
+	<script src="~/Scripts/react/react.js"></script>
+	<script src="@Url.Content("~/Scripts/jsx/reactTest.js")"></script>
     
 </head>
 <body>
-    <div id="wrapper">
+    <div id="wrapper" class="container">
         <header>
             <h1>
                 Cheap Books
             </h1>
+			
+            <nav>
+                <ul>
+                    <li><a href="~/Home/Index">Home</a></li>
+                    <li><a href="~/Home/Login">Login</a></li>
+                    <li><a href="~/Home/Signup">Signup</a></li>
+                </ul>
+            </nav>
         </header>
-
-        <nav>
-            <ul>
-                <li><a href="~/Home/Index">Home</a></li>
-                <li><a href="~/Home/Login">Login</a></li>
-                <li><a href="~/Home/Signup">Signup</a></li>
-                <li><a href="~/Home/Results">Results</a></li>
-            </ul>
-        </nav>
 
         <main>
             <div id="center">
@@ -35,7 +37,7 @@
         </main>
 
         <footer>
-            Copyright &copy; 2017 <br>
+            Copyright &copy; ur mum entertainment, 2017 <br>
         </footer>
     </div>
 </body>

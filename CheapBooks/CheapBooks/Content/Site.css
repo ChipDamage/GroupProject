@@ -8,12 +8,18 @@ Body: color: #6DBCDB; background-color: #2C3E50;
 */
 
 header {
-  color: #FFFFFF;
-  background-color: #FC4349;
-  border-radius: 10px 10px 0 0;
-  text-align: center;
+    color: #FFFFFF;
+    background-color: #FC4349;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    background-image: url(images/bookheaderimage.jpg);
+    border-radius: 10px 10px 0 0;
+    background-position: center;
 }
 
+#results {
+    padding: 5px;
+}
 
 nav {
   color: #2C3E50; 
@@ -26,10 +32,11 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #2C3E50;
   transition: background-color 0.25s ease, color 0.25s ease;
   padding: 0 5px 0 5px;
+  margin-bottom: 2px;
 }
 
 nav a:hover {
@@ -51,15 +58,15 @@ nav li {
 
 main {
   color: #2C3E50; 
-  background-color: #FFFFFF;
+  background-color: rgb(239, 239, 239);
   padding: 10px;
   margin: 0 auto;
 }
 
 body {
   font-family: Calibri, Helvetica, Arial, sans-serif;
-  color: #6DBCDB; 
-  background-color: #2C3E50;
+  color: #6DBCDB !important; 
+  background-color: #2C3E50 !important;
   text-align: center;
 }
 
@@ -78,6 +85,8 @@ footer {
   font-style: italic;
   border-radius: 0 0 10px 10px;
   box-shadow: 0px -5px 5px 0px #6DBCDB;
+  margin-top: 3px;
+  margin-bottom: 15px;
 }
 
 #content {
@@ -109,7 +118,8 @@ textarea {
   border: groove;
   border-radius: 20px;
   width: 450px;
-  margin: 0 auto;
+  margin: 5px auto;
+  padding-bottom: 5px;
 }
 
 input {
@@ -126,21 +136,20 @@ input {
 #pic_div {
   background-color: rgb(249, 147, 91);
   background-color: rgba(249, 147, 91, 0);
-  padding: 25px;
-  border: 3px solid rgb(0, 0, 0);
-  border: 3px solid rgba(0, 0, 0, .9);
+  padding-bottom: 5px;
   margin: auto;
-  width: 20px;
-  float:left;
-  margin-left: 200px;
+  width: auto;
+  padding-top: 3px;
+  padding-bottom: 13px;
 }
 
 #pic_div img {
-  width: 20px;
+  margin: 0 auto;
 }
 
 #book_result {
-  padding-left: 15px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 #book_result .subj {
@@ -151,6 +160,7 @@ input {
   margin-right: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: auto;
 }
 
 #book_result .deets {
@@ -166,7 +176,6 @@ input {
   clear: both;
 }
 
-
 #sale_div {
   padding-top: 5px;
   clear: both;
@@ -174,4 +183,44 @@ input {
 
 #sourcesTable {
     margin: 0 auto;
+    width: 60%;
+}
+
+tr > th {
+    text-align: center;
+}
+
+tbody {
+    display: block;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    width: 100%;
+    display: table;
+}
+
+#sale_div a {
+  text-decoration: underline;
+  color: #2C3E50;
+  transition: background-color 0.05s linear, color 0.05s ease;
+}
+
+#sale_div a:hover {
+  color: #2C3E50;
+  background-color: #6DBCDB;
+  transition: background-color 0.05s linear, color 0.05s linear;
+  padding: 3px;
+}
+
+header > h1 {
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

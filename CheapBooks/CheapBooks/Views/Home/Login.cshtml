@@ -1,18 +1,21 @@
 ﻿@{
     ViewBag.Title = "Login";
 }
-<h2>@ViewBag.Title</h2>
-<h3>@ViewBag.Message</h3>
+
 
 <div id="formstyle">
-    <h1>Login</h1>
 
-    <form id="log_form" method="post">
+    <h1>Login</h1>
+    <form id="log_form" method="post" action="http://webdevbasics.net/scripts/demo.php">
         <input type="text" name="user_name" placeholder="Username" id="user_name" maxlength="50">
         <input type="text" name="password" placeholder="Password" id="password" maxlength="50">
+        <input type="submit" value="Submit">
     </form>
 
-    <input type="submit" value="Log In">
+    <!-- This does not need to link to the SignUp page... Need to fix this when we know where it's going-->
+
     <p>Need to Create an account?</p>
-    <input type="submit" value="Sign Up!" onclick="location.href='signup.html';">
+    <form id="book_stuff" action="~/Home/Signup">
+        <input type="submit" value="Sign Up">
+    </form>
 </div>

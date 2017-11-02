@@ -28,10 +28,8 @@ namespace CheapBooks.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult reactTest()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
